@@ -1,0 +1,288 @@
+*{
+    font-family: 'Work Sans';
+}
+/* nav bar style  */
+.header{
+    background: #FF900E1A;
+    
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 228px;
+    align-items: center;
+}
+.nav-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+   padding: 0 30px;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    color: aliceblue;
+    border: 0;
+    border-radius: 10px;
+    margin: 33px 0;
+    padding: 20px 35px;
+}
+/* banner section style  */
+
+.banner{
+    
+    margin: 0 240px;
+    text-align: center;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    padding: 30px;
+}
+.banner-pic img{
+   width: 100%;
+   padding: 0 0 30px 0;
+}
+
+/* Quick list */
+.quick-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    width: 100%;
+  
+}
+.quick-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 130px 301px;
+    gap: 73px;
+    align-items: center;
+    
+}
+
+.pic{
+    width: 100%;
+}
+
+
+.quick-words{
+    height: 304px;
+    width: 537px;
+    
+}
+.quick-title{
+    font-size:45px ;
+    font-weight: 700;
+
+}
+.quick{
+    color:#727272;
+}
+.feature{
+    color: #FF900E;
+}
+
+
+/* love and enjoy  */
+.vl {
+    border-left: 8px solid #FF900E;
+    height: 130px;
+  }
+  .love-title{
+        display: flex;
+        gap: 20px;
+  }
+  .article{
+    padding: 30px 30px;
+   
+    box-shadow: 0 5px 2px 0  gray;
+    
+
+  }
+  .article-title{
+    font-size: 20px;
+    font-weight: 600;
+  }
+.love-enjoy{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+    grid-area: auto;
+    gap: 54px;
+  
+    align-items: center;
+}
+
+.love{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    height: 982px;
+    width: 586px;
+    gap: 5px;
+    margin-left: 240px;   
+}
+
+
+.btn-big{
+    background-color: #FF900E;
+    color: aliceblue;
+    border: 0;
+    border-radius: 10px;
+    margin: 33px 0;
+    padding: 20px 35px;
+    transform: translate(850px,-200px);
+    padding: 30px 20px;
+}
+
+.year{
+    font-size: 65px;
+}
+.love-title{  
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+.love .love-image{
+    height: 1059px;
+    width: 800px;
+}
+.love-image img{
+    width: 100%;
+}
+
+/* soome facts  */
+.facts{
+    margin: 0 240px;
+    
+}
+.fact-title{
+    font-weight: 700;
+    font-size: 45px;
+    
+}
+/* Work done section  */
+
+.work{
+    margin: 50px 290px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    justify-content: space-around;
+    gap: 124px;
+    
+   
+   
+}
+.work-done{
+    border: solid #FF900E 2px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    align-items: center;
+    line-height: 5%;
+  /* transform: rotate(45deg); */
+      
+}
+.work-done{
+    
+    border: 5px solid coral;
+    transition: width 3s, height 3s, transform 3s;
+}
+.work-done:hover{
+  
+    transform: rotate(360deg);
+}
+.sponsor{
+    text-align: center;
+    margin: 0 240px;
+}
+.sponsor-item{
+    display: flex;
+    width: auto;
+    gap: 155px;
+    padding: 50px 0;
+}
+.item-pic{
+    height: 100px;
+    width: 1440px;
+}
+.item-pic img{
+    width: 100%;
+}
+   
+.rights{
+    margin: 0 240px;
+    
+    background: #FF900E1A;;
+    text-align: center;
+    padding: 39px 0;
+
+}
+.right-words{
+    align-items: center;
+
+}
+
+@media screen and (max-width:562px) {
+
+    nav{
+        flex-direction: column;
+       text-align: center;   
+       margin: 0;
+        
+    }
+    nav ul li{
+        display: block;
+        
+       padding: 5px 10px;
+        
+    }
+
+    .banner{
+        margin: 0;
+    }
+    .quick-list{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0;
+    }
+    .quick-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .love-enjoy{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+         gap: 54px;
+         align-items: center;
+     }
+     .love{
+        margin: 0;
+     }
+     .btn-big{
+        transform: translate(120px,10px);
+     }
+     .facts{
+        margin: 0;
+     }
+     .sponsor{
+        margin: 0;
+     }
+     .work{
+        margin: 0;
+        padding: 10px 50px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        
+    }
+    .sponsor-item{
+        display: none;
+    }
+    .rights{
+       display: none;
+    }
+}
